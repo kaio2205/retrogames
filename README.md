@@ -1,3 +1,7 @@
+![GitHub License](https://img.shields.io/github/license/kaio2205/Retrogames)
+
+
+
 # Retro games
 Este repositorio o projeto do site Retro games 
 ## Autor 
