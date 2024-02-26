@@ -12,7 +12,12 @@ folha de estilo do site retrogames.com
 /* variavel global*/
 :root {
     --branco: #e5eff7;
-    --cinza: #000000;
+    --cinzatexto: #434343;
+    --cinza: rgb(12, 4, 23);
+     --backgroundcard: #f1f3f1;
+     --bordalayout: #ad1818;
+
+     
 }
 
 /* CSS RESET */
@@ -41,19 +46,60 @@ body {
     padding: 50px 15px 50px 15px;
 }
 
-.Flex {
+.Flex,.FlexMenu{
     display: flex;
+  justify-content: space-between;
+
+}
+.Flex {
+    
     flex-direction: column;
 }
+.Card{
+    margin-top: 30px;
+    width: 338px;
+    height: 520px;
+    background-color:var(--backgroundcard) ;
+    border: 1px solid var(--cinza);
+    border-radius: 25px;
+    text-align: center;
+}
+ 
+.Card img{
+    border-radius: 25px 25px 0px 0px ;
+}
+.Card h3{
+    margin: 15px 30px 0px 30px;
 
+}
+.Card p{
+    padding: 10px 15px 50px 15px;
+    text-align: left;
+    color: var(--cinzatexto);
+}
 
+.Button{
+text-decoration: none;
+background-color: var(--cinza);
+color: var(--branco);
+padding: 10px 80px ;
+border-radius: 25px;
+font-size: 1, 2em;
+font-weight: 700;
+}
 
 /* smartphone portrait */
 
 /* cabeçalho*/
-#logo {
+header{
+    height: 90px;
+    
+}
+#logo img {
     width: 80px;
     height: 80px;
+    margin: 5px;
+    
 }
 
 /*FOOTER */
@@ -70,17 +116,28 @@ footer {
 }
 
 /* smartphone landscape */
+    
 @media(min-width: 576px) {
+    /* Cabeçalho*/
     .Container {
         max-width: 540px;
 
     }
-    .Flex {
-        flex-direction: row-reverse;
+    header{
+        max-width: 540px;
+        margin: auto;
+    }
+
+.Flex {
+    flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
     }
+    #social{
+        margin: 0;
+    }
 }
+
 
 /* Tablet portrait*/
 @media(min-width: 768px) {
@@ -91,12 +148,31 @@ footer {
 
 }
 
+ /*cabeçalho*/
+ header{
+    max-width: 720px;
+    margin: 0 auto;
+    height: 175px;
+    
+ }
+ #logo img {
+    width: 190px;
+    height: 190px;
+    
+}
+
 /* Tablet landscape */
 @media(min-width: 992px) {
     .Container {
-        max-width: 960px;
+        max-width: 999px;
 
     }
+    header{
+        max-width: 999px;
+        margin: 0 auto;
+        height: 175px;
+        
+}
 }
 
 
@@ -106,15 +182,20 @@ footer {
         max-width: 1140px;
 
     }
+    header{
+        max-width: 1140px;
+        margin: 0 auto;
+        height: 175px;
+        
 
-    
+    }
 
     #social {
         margin: 0px;
     }
-
-    #copyright {}
 }
+
+
 
 /* PCs ou notebooks TV  full HD + */
 
@@ -124,4 +205,10 @@ footer {
         max-width: 1360px;
 
     }
+    header{
+        max-width: 1360px;
+        margin: 0 auto;
+        height: 175px;
+        
+}
 }
