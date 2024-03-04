@@ -9,33 +9,29 @@ folha de estilo do site retrogames.com
 
 @import url('https://fonts.googleapis.com/css2?family=Anta&family=Bungee+Spice&family=Honk&family=Kode+Mono:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-/* variavel global*/
-:root{
-    --branco: #e5eff7;
-    --cinzatexto: #434343;
-    --cinza: rgb(12, 4, 23);
-     --backgroundcard: #f1f3f1;
-     --bordalayout: #ad1818;
-    }
+:root {
+    --cinzaLayout: #3c3c3c;
+    --cinzaTexto: #434343;
+    --brancoLayout: #ffffff;
+    --backgroundCard: #f1f3f4;
+    --bordaLayout: #a1a1a1;
+    --vermelhoLayout: #c00000;
+}
 
 /* CSS RESET */
 * {
     margin: 0;
     padding: 0;
     border: 0;
-
 }
 
-/*Layout*/
-
-
-
+/* LAYOUT >>>>>>>>>>>>>>>>>>>>>>>>>> */
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: "Anta", system-ui;
+    font-family: "Open Sans", sans-serif;
     font-size: 1em;
 }
 
@@ -44,246 +40,250 @@ body {
     padding: 50px 15px 50px 15px;
 }
 
-.Flex,.FlexMenu{
-    display: flex;
-  justify-content: space-between;
-
+.Flex,
+.FlexMenu {
+    display: Flex;
+    justify-content: space-between;
 }
+
 .Flex {
-    
     flex-direction: column;
 }
-.Card{
+
+/* cartão */
+.Card {
     margin-top: 30px;
     width: 338px;
     height: 520px;
-    background-color:var(--backgroundcard) ;
-    border: 1px solid var(--cinza);
+    background-color: var(--backgroundCard);
+    border: 1px solid var(--bordaLayout);
     border-radius: 25px;
     text-align: center;
 }
- 
-.Card img{
-    border-radius: 25px 25px 0px 0px ;
-}
-.Card h3{
-    margin: 15px 30px 0px 30px;
 
+.Card img {
+    border-radius: 25px 25px 0px 0px;
 }
-.Card p{
+
+.Card h3 {
+    margin: 15px 30px 0px 30px;
+}
+
+.Card p {
     padding: 10px 15px 50px 15px;
     text-align: left;
-    color: var(--cinzatexto);
+    color: var(--cinzaTexto);
 }
 
-.Button{
-text-decoration: none;
-background-color: var(--cinza);
-color: var(--branco);
-padding: 10px 80px ;
-border-radius: 25px;
-font-size: 1.2em;
-font-weight: 700;
+.Button {
+    text-decoration: none;
+    background-color: var(--vermelhoLayout);
+    color: var(--brancoLayout);
+    padding: 10px 100px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: 700;
 }
-/* Topo do site*/
-#topo{
+
+/* Topo */
+#topo {
     position: fixed;
-    right:10px;
+    right: 10px;
     bottom: 10px;
-
 }
 
+/* Smartphone portrait >>>>>>>>>>>>>>>> */
 
-
-/* smartphone portrait */
-
-/* cabeçalho*/
-header{
-    height: 60px;
-  
-    
+/* Cabeçalho */
+header {
+    height: 80px;
 }
+
 #logo img {
-    width: 10px;
-    height: 10px;
-    margin: 10px 0px ;
-    
-    
+    width: 100px;
+    height: 60.88px;
+    margin: 10px 0px 0px 10px;
 }
-#check{
+
+#check {
     display: none;
 }
-label{
-    font-size: 3em;
+
+label {
+    font-size: 3em;    
     position: fixed;
-    top: 10px;
-    right: 10px;
-    
+    top: 25px;
+    right: 3px;
+    color: rgba(60,60,60, 0.6);
 }
+
 nav ul {
     list-style: none;
-    background-color:rgb(60,60,60 , 0.2);
+    background-color: rgba(60,60,60, 0.95);
     height: 100vh;
     position: fixed;
-    top: 20px; 
-    right: -70%;          /* faz recolher o menu */
-    width: 60%;
+    top: 80px;
+    right: -70%; /*estratégia para recolher o menu*/
+    width: 70%;
     transition: all 0.5s;
-    
-    
-
 }
-/* ativar o checkbox */
-#check:checked~ul{
+
+/* ativar o checkbox refernte a ul*/
+#check:checked~ul {
     right: 0;
 }
-nav ul li{
-    border-bottom: 0.5px solid var(--branco);
+
+nav ul li {
+    border-bottom: 0.5px solid var(--backgroundCard);
     text-align: right;
-    padding: 13px;
+    padding: 15px;
+
 }
 
 nav ul li a {
     text-decoration: none;
-    color: firebrick;
-    font-size: 1.5em;
+    color: var(--brancoLayout)
 }
 
-
-/*Rodapé */
+/* Rodapé */
 footer {
-    background-color: var(--branco);
-    color: #000000;
+    background-color: var(--cinzaLayout);
+    color: var(--brancoLayout);
     text-align: center;
-
-
 }
 
 #social {
     margin-bottom: 25px;
 }
 
-/* smartphone landscape */
-    
-@media(min-width: 576px) {
-    /* Cabeçalho*/
+/* Smartphone landscape >>>>>>>>>>>>>>> */
+@media (min-width: 576px) {
+
+    /* Layout */
     .Container {
         max-width: 540px;
-
     }
-    header{
+
+    /* Cabeçalho */
+    header {
         max-width: 540px;
-        margin : 0 auto;
+        margin: 0 auto;
     }
 
-.Flex {
-    flex-direction: row-reverse;
+    .Flex {
+        flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
     }
-    #social{
+
+    #social {
         margin: 0;
     }
 }
 
+/* Tablet portrait >>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 768px) {
 
-/* Tablet portrait*/
-@media(min-width: 768px) {
+    /* Layout */
     .Container {
         max-width: 720px;
-
     }
 
+    /* Cabeçalho */
+    header {
+        max-width: 720px;
+        height: 100px;
+    }
+
+    label {
+        font-size: 4em;       
+        top: 25px;
+        right: 5px;      
+    }
+
+    #logo img {
+        width: 100.34px;
+        height: 81.2px;
+        margin: 10px 0px 0px 0px;
+    }
+
+    nav ul {
+        top: 100px;
+        right: -50%;
+        width: 50%;
+    }
 }
 
- /*cabeçalho*/
- header{
-    max-width: 720px;
-    height: 175px;
-    
- }
- label{
-    font-size: 2em;
-    position: fixed;
-    top: 10px;
-    right: 15px;
-}
- 
- 
- 
- #logo img {
-    width: 190px;
-    height: 190px;
-}
-   nav ul {
-    top: 100px;
-    right: -50%;
-    width: 50%;
-}
+/* Tablet landscape >>>>>>>>>>>>>>>>>>> */
+@media (min-width: 992px) {
 
-/* Tablet landscape */
-@media(min-width: 992px) {
+    /* Layout */
     .Container {
-        max-width: 999px;
-
+        max-width: 960px;
     }
-    header{
-        max-width: 999px;
-        margin: 0 auto;
-        height: 175px;
-        
-}
+
+    /* Cabeçalho */
+    header {
+        max-width: 992px;
+    }
 }
 
+/* PCs ou notebooks HD >>>>>>>>>>>>>>>> */
+@media (min-width: 1200px) {
 
-/* PCs ou notebooks lixo */
-@media(min-width: 1200px) {
+    /* Layout */
     .Container {
         max-width: 1140px;
-
     }
-    header{
+
+    /* Cabeçalho */
+    header {
         max-width: 1140px;
-        margin: 0 auto;
-        height: 175px;
-        
-
+        height: 125px;
     }
 
-    
-    label{
+    #logo img {
+        width: 124px;
+        height: 97.4px;
+    }
+
+    label {
         display: none;
     }
-    nav ul{
-        position: static;
-        margin: 70px;
+
+    nav ul {
         width: 100%;
+        position: static;
         height: auto;
-        background-color: #434343;
+        background-color: var(--brancoLayout);
+        margin-top: 50px;
     }
+
     nav ul li {
         border: 0;
         float: left;
     }
-    nav ul li a{
-        background-color: #ad1818;
+
+    nav ul li a {
+        color: var(--cinzaLayout);
     }
+
+    nav ul li a:hover {
+        color: var(--vermelhoLayout)
+    }
+
 }
 
+/* PCs, notebooks ou Tv Full HD + >>>> */
+@media (min-width: 1400px) {
 
-
-/* PCs ou notebooks TV  full HD + */
-
-@media(min-width: 1400px) {
-
-    .Container {
-        max-width: 1360px;
-
+    /* Cabeçalho */
+    header {
+        height: 150px;
     }
-    header{
-        max-width: 1360px;
-        margin: 0 auto;
-        height: 175px;
-        
-}
+
+    #logo img {
+        width: 190px;
+        height: 121.75px;
+    }
 }
