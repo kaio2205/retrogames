@@ -77,8 +77,8 @@ body {
 
 .Button {
     text-decoration: none;
-    background-color: var(--vermelhoLayout);
-    color: var(--brancoLayout);
+    background-color: var(--brancoLayout);
+    color: var(--vermelhoLayout);
     padding: 10px 100px;
     border-radius: 25px;
     font-size: 1.2em;
@@ -145,6 +145,30 @@ nav ul li a {
     color: var(--brancoLayout)
 }
 
+main{
+    position: relative;
+    height: 65vh;
+}
+main video{
+   width: 100%;
+   height: 100%;
+   object-fit: cover; /*cobrir completamente container */
+}
+#banner{
+   position: absolute;
+   /* centralizaar o conteudo*/
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+
+}
+#banner h1,h2{
+   color: var(--brancoLayout);
+   display: none;
+}
+
+
 /* Rodapé */
 footer {
     background-color: var(--cinzaLayout);
@@ -179,7 +203,15 @@ footer {
     #social {
         margin: 0;
     }
+    /*banner*/
+#banner h1{
+    display: block;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 500;
+    font-size: 1.9em;
+    }
 }
+
 
 /* Tablet portrait >>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px) {
@@ -212,6 +244,7 @@ footer {
         right: -50%;
         width: 50%;
     }
+    
 }
 
 /* Tablet landscape >>>>>>>>>>>>>>>>>>> */
@@ -272,6 +305,7 @@ footer {
         color: var(--vermelhoLayout)
     }
 
+    
 }
 
 /* PCs, notebooks ou Tv Full HD + >>>> */
