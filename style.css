@@ -244,6 +244,10 @@ footer {
         right: -50%;
         width: 50%;
     }
+    /*banner*/
+#banner h1{
+    font-size: 2.2em;
+    }
     
 }
 
@@ -305,7 +309,10 @@ footer {
         color: var(--vermelhoLayout)
     }
 
-    
+     /*banner*/
+#banner h2 {
+    display: block;
+    }
 }
 
 /* PCs, notebooks ou Tv Full HD + >>>> */
