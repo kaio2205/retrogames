@@ -148,7 +148,7 @@ nav ul li a {
 
 main{
     position: relative;
-    height: 69vh;
+    height: 30vh;
 }
 main video{
    width: 100%;
@@ -204,9 +204,12 @@ footer {
 #banner h1{
     display: block;
     font-family: "Orbitron", sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.9em;
-    }
+    height: 20vh;
+    position: relative;
+}
+    
 
     #social {
         margin: 0;
