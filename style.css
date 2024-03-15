@@ -50,6 +50,12 @@ body {
     flex-direction: column;
 }
 
+.FlexCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
 /* cartão */
 .Card {
     margin-top: 30px;
@@ -60,11 +66,9 @@ body {
     border-radius: 25px;
     text-align: center;
 }
-
 .Card img {
     border-radius: 25px 25px 0px 0px;
 }
-
 .Card h3 {
     margin: 15px 30px 0px 30px;
 }
@@ -84,6 +88,97 @@ body {
     font-size: 1.2em;
     font-weight: 700;
 }
+
+/* ******************************************************************************************************* */
+.Card2 {
+    margin-top: 30px;
+    margin-right: 10px;
+    width: 338px;
+    height: 520px;
+    background-color: var(--backgroundCard);
+    border: 1px solid var(--bordaLayout);
+    border-radius: 25px;
+    text-align: center;
+}
+.Card2 img {
+    border-radius: 25px 25px 0px 0px;
+}
+.Card2 h3 {
+    margin: 15px 30px 0px 30px;
+}
+
+.Card2 p {
+    padding: 10px 15px 50px 15px;
+    text-align: left;
+    color: var(--cinzaTexto);
+}
+
+.Button2 {
+    text-decoration: none;
+    background-color: var(--brancoLayout);
+    color: var(--vermelhoLayout);
+    padding: 10px 100px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+/* ***************************************************************************************************** */
+.Card3 {
+    margin-top: 30px;
+    width: 338px;
+    height: 520px;
+    background-color: var(--backgroundCard);
+    border: 1px solid var(--bordaLayout);
+    border-radius: 25px;
+    text-align: center;
+}
+.Card3 img {
+    border-radius: 25px 25px 0px 0px;
+}
+.Card3 h3 {
+    margin: 15px 30px 0px 30px;
+}
+
+.Card3 p {
+    padding: 10px 15px 50px 15px;
+    text-align: left;
+    color: var(--cinzaTexto);
+}
+
+.Button3 {
+    text-decoration: none;
+    background-color: var(--brancoLayout);
+    color: var(--vermelhoLayout);
+    padding: 10px 100px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+/* ******************************************************************************************************* */
+
+
+
+
+
+
+.superMario{
+    margin-top: 30px;
+    width: 338px;
+    height: 520px;
+    border-radius: 25px;
+    text-align: center;
+   background-color: aquamarine;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Topo */
 #topo {
