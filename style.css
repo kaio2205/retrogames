@@ -16,6 +16,9 @@ folha de estilo do site retrogames.com
     --backgroundCard: #f1f3f4;
     --bordaLayout: #a1a1a1;
     --vermelhoLayout: #c00000;
+    --vermelhoLayout: #B30000;
+    --pretoSombra: #000000;
+    --cinzaText: #434343;
 }
 
 /* CSS RESET */
@@ -48,6 +51,17 @@ body {
 
 .Flex {
     flex-direction: column;
+}
+.FlexServices {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.FlexSection {
+    display: flex;
+    align-items: center;
 }
 
 .FlexCard{
@@ -156,30 +170,6 @@ body {
 }
 /* ******************************************************************************************************* */
 
-
-
-
-
-
-.superMario{
-    margin-top: 30px;
-    width: 338px;
-    height: 520px;
-    border-radius: 25px;
-    text-align: center;
-   background-color: aquamarine;
-}
-
-
-
-
-
-
-
-
-
-
-
 /* Topo */
 #topo {
     position: fixed;
@@ -277,6 +267,30 @@ footer {
     margin-bottom: 25px;
 }
 
+
+/* Customizando meu section  */
+#sectionServices {
+    background-color: var(--cinzaLayout);
+}
+
+#sectionTitle {
+    text-align: center;
+}
+
+.TopicosSection img {
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#sectionTitle h2 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    color: var(--brancoLayout);
+}
+
+
+
+
 /* Smartphone landscape >>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
 
@@ -348,6 +362,18 @@ footer {
     font-size: 2.2em;
     }
     
+    .TopicosSection img {
+        border-radius: 20px;
+        margin: 5px;
+        }
+    
+        #sectionTitle h2 {
+        font-size: 2.2em;
+        margin-bottom: 20px;
+        color: var(--cinzaLayout);
+        }
+
+
 }
 
 /* Tablet landscape >>>>>>>>>>>>>>>>>>> */
