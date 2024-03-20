@@ -106,7 +106,7 @@ body {
     padding: 10px 100px;
     border-radius: 25px;
     font-size: 1.2em;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 /* ******************************************************************************************************* */
@@ -295,7 +295,7 @@ footer {
 
 #sectionTitle h2 {
     font-size: 1.4em;
-    
+    color: #434343;
     display: block;
 }
 
