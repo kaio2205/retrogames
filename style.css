@@ -36,6 +36,7 @@ html {
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 1em;
+    
 }
 
 .Container {
@@ -43,6 +44,10 @@ body {
     padding: 50px 15px 50px 15px;
     
     
+}
+
+.Container h2{
+    text-align: center;
 }
 
 .Flex,
@@ -71,6 +76,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+
 
 
 /* cartão */
@@ -112,6 +119,33 @@ body {
 }
 
 /* ******************************************************************************************************* */
+
+/* PAGINA SOBRE */
+
+#textoSobre h2 {    
+    margin: 20px 0px;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+#textoSobre h3 {   
+    margin: 20px 0px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+#textoSobre ol {
+    margin-left: 20px;
+}
+
+#textoSobre h4 {
+    margin-top: 15px;    
+    font-weight: 400;
+    font-size: 1em;
+}
+
+
+
 
 
 /* Topo */
@@ -194,52 +228,17 @@ main video{
    text-align: center;
 
 }
-#banner h1,h2{
-   color: var(--brancoLayout);
-   display: none;
-}
+
+/* Banner de páginas */
+
 
 #intro {
-    background: url();
-    background-size: cover;
-    background-position: center;
-}
+    background: url(img/AINDA\ VIVE\ \(1\)\ \(1\).png);
+   
+    width: auto;
+    right: auto;
 
-#destaqueIntro {
-    display: none;
 }
-
-#textoIntro {
-    color: var(--branco);
-}
-
-#textoIntro h1 {
-    font-family: "Orbitron", sans-serif;
-    text-shadow: 0px 5px 10px #b2a98f,
-        0px 10px 10px rgba(0, 0, 0, 0.15),
-        0px 15px 15px rgba(0, 0, 0, 0.1),
-        0px 20px 20px rgba(0, 0, 0, 0.1);
-    font-weight: 600;
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.TopicosIntro {
-    margin-top: 10px;
-}
-
-.TopicosIntro img {
-    margin-right: 20px;
-}
-
-#textoIntro p {
-    font-weight: 500;
-    text-shadow: 0px 5px 10px #4f4e4d,
-        0px 10px 10px rgba(0, 0, 0, 0.15),
-        0px 15px 15px rgba(0, 0, 0, 0.1),
-        0px 20px 20px rgba(0, 0, 0, 0.1);
-}
-
 /* Rodapé */
 footer {
     background-color: var(--cinzaLayout);
@@ -423,6 +422,7 @@ footer {
 #banner h2 {
     display: block;
     }
+    
 }
 
 /* PCs, notebooks ou Tv Full HD + >>>> */
