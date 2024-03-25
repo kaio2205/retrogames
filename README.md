@@ -6,6 +6,9 @@
 
 # Retro games
 Este repositorio o projeto do site Retro games 
+
+![image](https://github.com/kaio2205/retrogames/assets/132935535/d2ca7e76-d946-4445-97a9-912e5fd84e91)
+
 ## Autor 
 Kaio
 
