@@ -120,33 +120,6 @@ body {
 
 /* ******************************************************************************************************* */
 
-/* PAGINA SOBRE */
-
-#textoSobre h2 {    
-    margin: 20px 0px;
-    font-size: 1.5em;
-    font-weight: 600;
-}
-
-#textoSobre h3 {   
-    margin: 20px 0px;
-    font-size: 1.2em;
-    font-weight: 500;
-}
-
-#textoSobre ol {
-    margin-left: 20px;
-}
-
-#textoSobre h4 {
-    margin-top: 15px;    
-    font-weight: 400;
-    font-size: 1em;
-}
-
-
-
-
 
 /* Topo */
 #topo {
@@ -231,14 +204,6 @@ main video{
 
 /* Banner de páginas */
 
-
-#intro {
-    background: url(img/AINDA\ VIVE\ \(1\)\ \(1\).png);
-   
-    width: auto;
-    right: auto;
-
-}
 /* Rodapé */
 footer {
     background-color: var(--cinzaLayout);
@@ -272,6 +237,36 @@ footer {
     display: block;
 }
 
+/* PAGINA SOBRE */
+
+#txtSobre{    
+    margin: 10px;
+    font-size: 1.0em;
+    font-weight: 3000;
+    text-align: center;
+   
+}
+
+
+
+#txtSobre p {
+text-align: center;
+ border-radius: 50px;
+}
+ 
+
+
+#imgsobre img{
+border-radius: 50%;
+ width: 250px;    
+ height: 250px;  
+text-align: center;
+        
+}
+
+#imgsobre{
+    text-align: center;
+}
 
 
 
@@ -293,20 +288,8 @@ footer {
         flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center; }
-/*banner*/
-#banner h1{
-    display: block;
-    font-family: "Orbitron", sans-serif;
-    font-weight: 400;
-    font-size: 1.9em;
-    height: 20vh;
-    position: relative;
-}
-    
 
-    #social {
-        margin: 0;
-}
+
 }
 
 
@@ -342,9 +325,7 @@ footer {
         width: 50%;
     }
     /*banner*/
-#banner h1{
-    font-size: 2.2em;
-    }
+
     
     .TopicosSection img {
         border-radius: 20px;
