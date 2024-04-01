@@ -48,6 +48,7 @@ body {
 
 .Container h2{
     text-align: center;
+    margin-bottom: 25px;
 }
 
 .Flex,
@@ -229,6 +230,8 @@ footer {
 .TopicosSection img {
     border-radius: 30px;
     margin: 5px;
+    height: 250px;
+    width: 250px;
 }
 
 #sectionTitle h2 {
