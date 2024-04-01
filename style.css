@@ -36,17 +36,17 @@ html {
 body {
     font-family: "Open Sans", sans-serif;
     font-size: 1em;
-    
+
 }
 
 .Container {
     margin: 0 auto;
     padding: 50px 15px 50px 15px;
-    
-    
+
+
 }
 
-.Container h2{
+.Container h2 {
     text-align: center;
     margin-bottom: 25px;
 }
@@ -60,6 +60,7 @@ body {
 .Flex {
     flex-direction: column;
 }
+
 .FlexServices {
     display: flex;
     align-items: center;
@@ -91,13 +92,15 @@ body {
     border-radius: 25px;
     text-align: center;
     flex-wrap: wrap;
-        
-    
-    
+
+
+
 }
+
 .Card img {
     border-radius: 25px 25px 0px 0px;
 }
+
 .Card h3 {
     margin: 15px 30px 0px 30px;
 }
@@ -147,20 +150,21 @@ header {
 }
 
 label {
-    font-size: 3em;    
+    font-size: 3em;
     position: fixed;
     top: 25px;
     right: 3px;
-    color: rgba(60,60,60, 0.6);
+    color: rgba(60, 60, 60, 0.6);
 }
 
 nav ul {
     list-style: none;
-    background-color: rgba(60,60,60, 0.95);
+    background-color: rgba(60, 60, 60, 0.95);
     height: 100vh;
     position: fixed;
     top: 80px;
-    right: -70%; /*estratégia para recolher o menu*/
+    right: -70%;
+    /*estratégia para recolher o menu*/
     width: 70%;
     transition: all 0.5s;
     z-index: 1;
@@ -183,23 +187,26 @@ nav ul li a {
     color: var(--brancoLayout)
 }
 
-main{
+main {
     position: relative;
     height: 30vh;
 }
-main video{
-   width: 100%;
-   height: 100%;
-   
-   object-fit: cover; /*cobrir completamente container */
+
+main video {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    /*cobrir completamente container */
 }
-#banner{
-   position: absolute;
-   /* centralizaar o conteudo*/
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   text-align: center;
+
+#banner {
+    position: absolute;
+    /* centralizaar o conteudo*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 
 }
 
@@ -224,7 +231,7 @@ footer {
 
 #sectionTitle {
     text-align: center;
-    
+
 }
 
 .TopicosSection img {
@@ -242,32 +249,30 @@ footer {
 
 /* PAGINA SOBRE */
 
-#txtSobre h2{    
+#txtSobre h2 {
     margin: 10px;
     font-size: 1.0em;
     font-weight: 900;
     text-align: center;
-   
+
 }
-
-
 
 #txtSobre p {
 
-margin-top: 1px;
-}
- 
-
-
-#imgsobre img{
-border-radius: 50%;
-width: 250px;    
-height: 250px;  
-text-align: center;
-        
+    margin-top: 1px;
 }
 
-#imgsobre{
+
+
+#imgsobre img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    text-align: center;
+
+}
+
+#imgsobre {
     text-align: center;
 }
 
@@ -290,7 +295,8 @@ text-align: center;
     .Flex {
         flex-direction: row-reverse;
         justify-content: space-between;
-        align-items: center; }
+        align-items: center;
+    }
 
 
 }
@@ -311,9 +317,9 @@ text-align: center;
     }
 
     label {
-        font-size: 4em;       
+        font-size: 4em;
         top: 25px;
-        right: 5px;      
+        right: 5px;
     }
 
     #logo img {
@@ -327,19 +333,20 @@ text-align: center;
         right: -50%;
         width: 50%;
     }
+
     /*banner*/
 
-    
+
     .TopicosSection img {
         border-radius: 20px;
         margin: 5px;
-        }
-    
-        #sectionTitle h2 {
+    }
+
+    #sectionTitle h2 {
         font-size: 2.2em;
         margin-bottom: 20px;
         color: var(--cinzaLayout);
-        }
+    }
 
 
 }
@@ -402,11 +409,11 @@ text-align: center;
         color: var(--vermelhoLayout)
     }
 
-     /*banner*/
-#banner h2 {
-    display: block;
+    /*banner*/
+    #banner h2 {
+        display: block;
     }
-    
+
 }
 
 /* PCs, notebooks ou Tv Full HD + >>>> */
