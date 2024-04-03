@@ -92,6 +92,7 @@ body {
     border-radius: 25px;
     text-align: center;
     flex-wrap: wrap;
+    
 
 
 
@@ -109,6 +110,7 @@ body {
     padding: 10px 15px 50px 15px;
     text-align: left;
     color: var(--cinzaTexto);
+    flex-wrap: wrap;
 }
 
 .Button {
@@ -319,7 +321,7 @@ textarea{
 
 input[type = "submit"],
 input[type = "reset"]{
-    background-color: darkgoldenrod;
+    background-color: rgb(243, 176, 8);
     color:#ffffff;
     padding: 10px 20px;
     border:none;
