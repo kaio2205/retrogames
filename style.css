@@ -217,6 +217,7 @@ footer {
     background-color: var(--cinzaLayout);
     color: var(--brancoLayout);
     text-align: center;
+    flex-direction: column;
 }
 
 #social {
@@ -276,6 +277,56 @@ footer {
     text-align: center;
 }
 
+
+/* PAGINA CONTATO */
+
+h1{
+    text-align: left;
+    margin: 50px 0px 25px 0px;
+
+}
+
+
+.Contato{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+
+}
+
+form{
+    background-color: aliceblue;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: #a1a1a1
+
+}
+
+
+input[type = "text"],
+input[type = "email"],
+textarea{
+    background-color: darkgray;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* deixa o tamanho alinhado*/
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+
+input[type = "submit"],
+input[type = "reset"]{
+    background-color: darkgoldenrod;
+    color:#ffffff;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
 
 
 /* Smartphone landscape >>>>>>>>>>>>>>> */
