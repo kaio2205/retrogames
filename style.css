@@ -86,7 +86,7 @@ body {
 .Card {
     margin-top: 30px;
     width: 338px;
-    height: 520px;
+    height: 525px;
     background-color: var(--backgroundCard);
     border: 1px solid var(--bordaLayout);
     border-radius: 25px;
@@ -125,6 +125,12 @@ body {
 }
 
 /* ******************************************************************************************************* */
+
+/* OUTRO tipo de card  */
+
+
+
+
 
 
 /* Topo */
@@ -257,12 +263,14 @@ footer {
     font-size: 1.0em;
     font-weight: 900;
     text-align: center;
+    
 
 }
 
 #txtSobre p {
 
     margin-top: 1px;
+    margin-bottom: 9px;
 }
 
 
