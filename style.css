@@ -130,7 +130,7 @@ body {
         color: var(--vermelhoLayout);
         padding: 10px 100px;
         border-radius: 25px;
-        font-size: 1.3em;
+        font-size: 1.4em;
         font-weight: 800;
         border: 2px solid #c00000;
   
@@ -143,7 +143,32 @@ body {
 
 /* ******************************************************************************************************* */
 
-/* OUTRO tipo de card  */
+/* Coteudo pagina */
+
+
+.designpage{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   }
+   
+   
+   .designpage img{
+   right: 1000px;
+   width: 1000px;
+   border-radius: 40px;
+   }
+   
+   .designpage p{
+   font-weight: 600;
+   }
+   
+   
+   
+   #TituloConteudo h2{
+       font-size: 1.9em;
+       }
 
 
 
@@ -356,6 +381,35 @@ input[type = "reset"]{
 }
 
 
+
+/* Coteudo pagina */
+
+
+.designpage{
+ display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+
+.designpage img{
+right: 360px;
+width: 360px;
+border-radius: 30px;
+}
+
+.designpage p{
+font-weight: 600;
+}
+
+
+
+#TituloConteudo h2{
+    font-size: 1.9em;
+    }
+
+
 /* Smartphone landscape >>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
 
@@ -506,4 +560,36 @@ input[type = "reset"]{
         width: 190px;
         height: 121.75px;
     }
+
+    /* Coteudo pagina */
+
+
+.designpage{
+    display: flex;
+   flex-direction: row;
+   align-items: center;
+   text-align: center;
+   
+   }
+   
+   
+   .designpage img{
+   right: 300px;
+   width: 330px;
+   border-radius: 40px;
+   
+   }
+   
+   .designpage p{
+   
+   margin-left: 20px;
+   }
+   
+   
+   
+   #TituloConteudo h2{
+       font-size: 1.9em;
+       }
+
+
 }
