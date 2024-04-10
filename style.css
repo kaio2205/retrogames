@@ -124,6 +124,23 @@ body {
     border: 2px solid #c00000;
 }
 
+.Button:hover{
+        text-decoration: none;
+        background-color: var(--brancoLayout);
+        color: var(--vermelhoLayout);
+        padding: 10px 100px;
+        border-radius: 25px;
+        font-size: 1.3em;
+        font-weight: 800;
+        border: 2px solid #c00000;
+  
+}
+
+
+
+
+
+
 /* ******************************************************************************************************* */
 
 /* OUTRO tipo de card  */
