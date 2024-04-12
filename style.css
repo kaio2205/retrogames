@@ -171,7 +171,7 @@ body {
        }
 
 
-
+/* ******************************************************************************************************* */
 
 
 
@@ -311,8 +311,8 @@ footer {
 
 #txtSobre p {
 
-    margin-top: 1px;
-    margin-bottom: 9px;
+    margin-top: 1.5px;
+    margin-bottom: 8px;
 }
 
 
@@ -351,7 +351,7 @@ form{
     background-color: aliceblue;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: #a1a1a1
+   
 
 }
 
